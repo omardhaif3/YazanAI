@@ -36,7 +36,9 @@ function App() {
     const userMessage = chatMessages[chatMessages.length - 1].message;
 
     // Call your Flask backend with the message
-    await fetch("http://localhost:5000/generate", // Adjust the port if necessary
+     await fetch("http://localhost:5000/generate",
+    //await fetch("https://yazanai.onrender.com/generate", // Adjust the port if necessary
+     // Adjust the port if necessary
       {
         method: "POST",
         headers: {
